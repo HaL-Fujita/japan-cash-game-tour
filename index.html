@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Japan Cash Game Tour｜世界のポーカーキャッシュゲーム 日本人完全ガイド</title>
-<meta name="description" content="マカオ・マニラ・ラスベガスなど世界中のカジノポーカーキャッシュゲームを日本語で完全ガイド。行き方・ルール・レート・マナーまで、初心者から上級者まで対応。">
-<meta property="og:title" content="Japan Cash Game Tour｜世界のポーカーキャッシュゲーム 日本人完全ガイド">
-<meta property="og:description" content="マカオ・マニラ・ラスベガスなど世界中のカジノポーカーキャッシュゲームを日本語で完全ガイド。">
+<title>キャッシュゲームコンシェルジュ｜はじめての海外ポーカーキャッシュゲーム完全ガイド</title>
+<meta name="description" content="マカオ・マニラ・ラスベガスなど世界中のカジノポーカーキャッシュゲームを日本語で完全案内。初心者でも安心して海外デビューできる、高品質な専門メディアです。">
+<meta property="og:title" content="キャッシュゲームコンシェルジュ｜はじめての海外ポーカーキャッシュゲーム完全ガイド">
+<meta property="og:description" content="マカオ・マニラ・ラスベガス。世界のポーカールームを日本語でやさしく案内します。">
 <meta property="og:type" content="website">
 <link rel="stylesheet" href="css/style.css">
 </head>
@@ -15,228 +15,558 @@
 <!-- HEADER -->
 <header>
   <div class="header-inner">
-    <a href="index.html" class="logo">♠ JAPAN CASH GAME TOUR</a>
-    <button class="hamburger" aria-label="メニュー">
+    <a href="index.html" class="logo">
+      <span class="logo-en">Cash Game Concierge</span>
+      <span class="logo-ja">キャッシュゲームコンシェルジュ</span>
+    </a>
+    <button class="hamburger" aria-label="メニューを開く">
       <span></span><span></span><span></span>
     </button>
     <nav class="desktop-nav">
       <a href="area/asia.html">アジア</a>
       <a href="#">ヨーロッパ</a>
       <a href="#">北米</a>
-      <a href="#">ルール解説</a>
-      <a href="guide/beginners.html">初心者ガイド</a>
-      <a href="#" class="nav-cta">遠征計画を立てる</a>
+      <a href="#">初心者ガイド</a>
+      <a href="#faq">よくある質問</a>
+      <a href="#" class="nav-cta-btn">エリアを選ぶ</a>
     </nav>
   </div>
 </header>
 
 <!-- MOBILE NAV -->
 <div class="mobile-nav">
-  <a href="area/asia.html">🌏 アジアエリアガイド</a>
-  <a href="#">🌍 ヨーロッパエリアガイド</a>
-  <a href="#">🌎 北米エリアガイド</a>
-  <a href="#">🎴 ルール・マナー解説</a>
-  <a href="#">💰 資金・レート管理</a>
-  <a href="guide/beginners.html">✈️ 初めての方へ</a>
-  <a href="#" style="color:var(--gold);font-weight:700;">遠征計画を立てる →</a>
+  <a href="area/asia.html"><span class="nav-icon">🌏</span>アジアエリアガイド</a>
+  <a href="#"><span class="nav-icon">🌍</span>ヨーロッパガイド</a>
+  <a href="#"><span class="nav-icon">🌎</span>北米ガイド</a>
+  <a href="guide/beginners.html"><span class="nav-icon">✈️</span>初心者ガイド</a>
+  <a href="#faq"><span class="nav-icon">❓</span>よくある質問</a>
+  <div class="mobile-nav-cta">
+    <a href="area/asia.html">エリアを選んで始める →</a>
+  </div>
 </div>
 
-<!-- HERO -->
+<!-- ============================
+     HERO
+============================= -->
 <section class="hero">
-  <div class="hero-badge">🃏 POKER TRAVEL MEDIA</div>
-  <h1>世界のポーカーテーブルへ、<br><em>日本人のための羅針盤</em></h1>
-  <p>マカオ・マニラ・ラスベガス・シンガポール。世界中のカジノキャッシュゲームを日本語で完全ガイド。行き方からマナーまで、初めての方でも安心。</p>
-  <div class="hero-btns">
-    <a href="area/asia.html" class="btn btn-primary">エリアを選ぶ →</a>
-    <a href="guide/beginners.html" class="btn btn-secondary">初めての方へ</a>
+  <div class="hero-bg">
+    <img data-scene="hero" src="" alt="海外ポーカールームの上質な空間" class="hero-bg-img">
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Your Overseas Poker Guide</div>
+    <div class="hero-tags">
+      <span class="hero-tag">🌏 マカオ</span>
+      <span class="hero-tag">🇵🇭 マニラ</span>
+      <span class="hero-tag">🇸🇬 シンガポール</span>
+      <span class="hero-tag">🎲 ラスベガス</span>
+    </div>
+    <h1 class="hero-title">
+      はじめての海外キャッシュゲームを、<br>
+      <em>安心して楽しむために。</em>
+    </h1>
+    <p class="hero-sub">マカオ・マニラ・ラスベガス。世界中のポーカールームを、日本語でやさしく案内します。初心者でも、ここを読めば行けます。</p>
+    <div class="hero-btns">
+      <a href="area/asia.html" class="btn btn-primary">▶ エリアを選んで始める</a>
+      <a href="guide/beginners.html" class="btn btn-ghost">初めての方へ</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
   </div>
 </section>
 
-<!-- STEPS -->
-<div class="steps-section">
-  <div class="steps-inner">
-    <div class="steps-label">FIRST TIME? 3ステップで始める</div>
-    <div class="steps-row">
-      <div class="step-item">
-        <div class="step-num">1</div>
-        <div class="step-text">行き先エリアを選ぶ</div>
+<!-- ============================
+     TRUST BAR
+============================= -->
+<div class="trust">
+  <div class="container">
+    <div class="trust-grid">
+      <div class="trust-item reveal">
+        <div class="trust-icon">🗾</div>
+        <div class="trust-body">
+          <div class="trust-label">日本語で完全対応</div>
+          <div class="trust-desc">英語が苦手でも大丈夫。現地でのやりとりから入場方法まで、すべて日本語で解説しています。</div>
+        </div>
       </div>
-      <div class="step-arrow">›</div>
-      <div class="step-item">
-        <div class="step-num">2</div>
-        <div class="step-text">ポーカールームを確認</div>
+      <div class="trust-item reveal reveal-delay-2">
+        <div class="trust-icon">🔰</div>
+        <div class="trust-body">
+          <div class="trust-label">初心者向けに設計</div>
+          <div class="trust-desc">「キャッシュゲームって何？」という方から、本格的な遠征を考えている方まで対応しています。</div>
+        </div>
       </div>
-      <div class="step-arrow">›</div>
-      <div class="step-item">
-        <div class="step-num">3</div>
-        <div class="step-text">遠征プランを立てる</div>
+      <div class="trust-item reveal reveal-delay-3">
+        <div class="trust-icon">🌐</div>
+        <div class="trust-body">
+          <div class="trust-label">実体験ベースの情報</div>
+          <div class="trust-desc">現地訪問者による最新レポートをベースに、レート・マナー・混雑情報を正確にお届けします。</div>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- AREA -->
-<section>
-  <div class="section-inner">
-    <div class="section-header">
-      <div class="section-label">DESTINATION GUIDE</div>
+<!-- ============================
+     INTRO
+============================= -->
+<section class="intro section-py">
+  <div class="container">
+    <div class="intro-grid">
+      <div class="intro-img-wrap reveal">
+        <img data-scene="intro" src="" alt="ポーカーテーブルの雰囲気">
+        <div class="intro-img-badge">
+          <div class="intro-img-badge-num">3</div>
+          <div class="intro-img-badge-text">ステップで遠征準備完了</div>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-2">
+        <div class="section-header">
+          <div class="section-eyebrow">How It Works</div>
+          <h2 class="section-title">このサイトで、<br><span>遠征の全てがわかります</span></h2>
+          <p class="section-desc">初めての海外ポーカーは不安なことだらけ。でも、準備さえすれば怖くありません。3ステップで遠征デビューを一緒に計画しましょう。</p>
+        </div>
+        <div class="intro-steps">
+          <div class="intro-step">
+            <div class="intro-step-num">01</div>
+            <div>
+              <div class="intro-step-title">行き先エリアを選ぶ</div>
+              <div class="intro-step-desc">アジア・ヨーロッパ・北米から、自分の予算や旅行スタイルに合ったエリアをチェック。初心者にはマカオかマニラがおすすめです。</div>
+            </div>
+          </div>
+          <div class="intro-step">
+            <div class="intro-step-num">02</div>
+            <div>
+              <div class="intro-step-title">ポーカールームを確認する</div>
+              <div class="intro-step-desc">レート・タイムチャージ・ゲーム種類・混雑時間を事前に調べて、自分に合ったルームを絞り込みます。</div>
+            </div>
+          </div>
+          <div class="intro-step">
+            <div class="intro-step-num">03</div>
+            <div>
+              <div class="intro-step-title">準備して、行くだけ</div>
+              <div class="intro-step-desc">両替・ドレスコード・英語フレーズ・持ち物チェックリスト。初遠征ガイドで不安を全部つぶしてから出発！</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================
+     AREAS
+============================= -->
+<section class="areas section-py">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-eyebrow">Destination Guide</div>
       <h2 class="section-title">エリア別<span>ポーカールームガイド</span></h2>
+      <p class="section-desc">行きやすさ・予算・初心者向け度を軸に、世界3エリアを比較。まずはどのエリアから攻めるか決めましょう。</p>
     </div>
-    <div class="area-grid">
-      <a href="area/asia.html" class="area-card">
-        <div class="area-card-img-placeholder">🌏</div>
+    <div class="areas-grid">
+
+      <a href="area/asia.html" class="area-card reveal">
+        <div class="area-card-img">
+          <img data-scene="macau" src="" alt="マカオのカジノ">
+          <div class="area-card-img-overlay"></div>
+          <span class="area-card-region-badge">Asia</span>
+        </div>
         <div class="area-card-body">
-          <div class="area-card-region">ASIA</div>
-          <div class="area-card-title">アジアエリア</div>
-          <div class="area-card-desc">マカオ・マニラ・シンガポール・韓国など。日本から近くコスパ最高。キャッシュゲーム天国がここに。</div>
-          <div class="area-card-meta">
-            <span>🏆 マカオ</span>
-            <span>🃏 マニラ</span>
-            <span>🎰 シンガポール</span>
+          <div class="area-card-title">アジア</div>
+          <div class="area-card-desc">マカオ・マニラ・シンガポール。日本から最も近く、コストを抑えながら本格的なキャッシュゲームを体験できるエリア。</div>
+          <div class="area-card-stars">
+            <span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span>
+            <span class="star-label">初心者向け度</span>
           </div>
+          <div class="area-card-stats">
+            <span class="stat-badge">✈️ <strong>3〜6h</strong> 日本から</span>
+            <span class="stat-badge">💴 <strong>低〜中</strong> 予算感</span>
+            <span class="stat-badge">🌐 英語 <strong>少しでOK</strong></span>
+          </div>
+          <div class="area-card-link">詳細を見る <span class="arrow">→</span></div>
         </div>
       </a>
-      <a href="#" class="area-card">
-        <div class="area-card-img-placeholder">🌍</div>
+
+      <a href="#" class="area-card reveal reveal-delay-2">
+        <div class="area-card-img">
+          <img data-scene="london" src="" alt="ロンドンのカジノ">
+          <div class="area-card-img-overlay"></div>
+          <span class="area-card-region-badge">Europe</span>
+        </div>
         <div class="area-card-body">
-          <div class="area-card-region">EUROPE</div>
-          <div class="area-card-title">ヨーロッパエリア</div>
-          <div class="area-card-desc">ロンドン・パリ・バルセロナ・プラハ。歴史的なカジノで本場のキャッシュゲームを体験。</div>
-          <div class="area-card-meta">
-            <span>🇬🇧 ロンドン</span>
-            <span>🇫🇷 パリ</span>
-            <span>🇲🇨 モナコ</span>
+          <div class="area-card-title">ヨーロッパ</div>
+          <div class="area-card-desc">ロンドン・パリ・バルセロナ・プラハ。歴史あるカジノで、本場の雰囲気を体感しながらプレイできる中上級者向けエリア。</div>
+          <div class="area-card-stars">
+            <span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star off">☆</span><span class="star off">☆</span>
+            <span class="star-label">初心者向け度</span>
           </div>
+          <div class="area-card-stats">
+            <span class="stat-badge">✈️ <strong>12〜14h</strong> 日本から</span>
+            <span class="stat-badge">💴 <strong>中〜高</strong> 予算感</span>
+            <span class="stat-badge">🌐 英語 <strong>必要</strong></span>
+          </div>
+          <div class="area-card-link">詳細を見る <span class="arrow">→</span></div>
         </div>
       </a>
-      <a href="#" class="area-card">
-        <div class="area-card-img-placeholder">🌎</div>
+
+      <a href="#" class="area-card reveal reveal-delay-3">
+        <div class="area-card-img">
+          <img data-scene="lasvegas" src="" alt="ラスベガスのカジノ">
+          <div class="area-card-img-overlay"></div>
+          <span class="area-card-region-badge">North America</span>
+        </div>
         <div class="area-card-body">
-          <div class="area-card-region">NORTH AMERICA</div>
-          <div class="area-card-title">北米エリア</div>
-          <div class="area-card-desc">ラスベガス・ロサンゼルス。世界最大のポーカーシーン。Bellagio、Aria、Venetianが待っている。</div>
-          <div class="area-card-meta">
-            <span>🎲 ラスベガス</span>
-            <span>🃏 LA カードクラブ</span>
+          <div class="area-card-title">北米</div>
+          <div class="area-card-desc">ラスベガス・ロサンゼルス。世界最大のポーカーシーン。Bellagio・Aria・Venetianなど聖地が集結。夢の頂点へ。</div>
+          <div class="area-card-stars">
+            <span class="star on">★</span><span class="star on">★</span><span class="star off">☆</span><span class="star off">☆</span><span class="star off">☆</span>
+            <span class="star-label">初心者向け度</span>
           </div>
+          <div class="area-card-stats">
+            <span class="stat-badge">✈️ <strong>9〜11h</strong> 日本から</span>
+            <span class="stat-badge">💴 <strong>高め</strong> 予算感</span>
+            <span class="stat-badge">🌐 英語 <strong>必須</strong></span>
+          </div>
+          <div class="area-card-link">詳細を見る <span class="arrow">→</span></div>
         </div>
       </a>
+
     </div>
   </div>
 </section>
 
-<!-- POPULAR ARTICLES -->
-<section style="background:var(--navy-light); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
-  <div class="section-inner">
-    <div class="section-header">
-      <div class="section-label">POPULAR ARTICLES</div>
+<!-- ============================
+     BEGINNER RANKING
+============================= -->
+<section class="ranking section-py">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-eyebrow">Beginner's Choice</div>
+      <h2 class="section-title">初心者に<span>おすすめの都市ランキング</span></h2>
+      <p class="section-desc">「どの国から始めるべきか？」という方のために、行きやすさ・コスト・治安・英語の不安度を総合評価しました。</p>
+    </div>
+    <div class="ranking-grid">
+
+      <div class="rank-card reveal">
+        <div class="rank-num top">1</div>
+        <div class="rank-body">
+          <div class="rank-flag">🇲🇴</div>
+          <div class="rank-name">マカオ（中国）</div>
+          <div class="rank-desc">香港経由でフェリー1時間。日本から近く、アジア最大のキャッシュゲームシーンが揃う。低〜中レートのテーブルも充実。</div>
+          <div class="rank-chips">
+            <span class="rank-chip good">✈️ 行きやすい</span>
+            <span class="rank-chip good">🔰 初心者OK</span>
+            <span class="rank-chip mid">💴 中程度の予算</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="rank-card reveal reveal-delay-1">
+        <div class="rank-num top">2</div>
+        <div class="rank-body">
+          <div class="rank-flag">🇵🇭</div>
+          <div class="rank-name">マニラ（フィリピン）</div>
+          <div class="rank-desc">直行便約4時間、物価も安い。Solaire・Okadaなど大型リゾートカジノが集中し、観光も楽しめる。</div>
+          <div class="rank-chips">
+            <span class="rank-chip good">✈️ 直行便あり</span>
+            <span class="rank-chip good">💴 コスパ良い</span>
+            <span class="rank-chip mid">🎲 ゲーム豊富</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="rank-card reveal reveal-delay-2">
+        <div class="rank-num">3</div>
+        <div class="rank-body">
+          <div class="rank-flag">🇸🇬</div>
+          <div class="rank-name">シンガポール</div>
+          <div class="rank-desc">治安が良く清潔で英語が通じやすい。外国人は入場料がかかるが、MBS・RWSの2大ルームは質が高い。</div>
+          <div class="rank-chips">
+            <span class="rank-chip good">🛡️ 治安優秀</span>
+            <span class="rank-chip good">🌐 英語OK</span>
+            <span class="rank-chip mid">💴 やや高め</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="rank-card reveal reveal-delay-3">
+        <div class="rank-num">4</div>
+        <div class="rank-body">
+          <div class="rank-flag">🇰🇷</div>
+          <div class="rank-name">韓国（ソウル・仁川）</div>
+          <div class="rank-desc">2〜3時間で行ける近さが魅力。外国人専用カジノで日本人も気軽に遊べる。ゲームはNLH中心。</div>
+          <div class="rank-chips">
+            <span class="rank-chip good">✈️ 最寄り圏</span>
+            <span class="rank-chip mid">🎲 NLH中心</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================
+     PREP GUIDE
+============================= -->
+<section class="prep section-py">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-eyebrow">Before You Go</div>
+      <h2 class="section-title">失敗しない<span>遠征準備ガイド</span></h2>
+      <p class="section-desc">初めての海外キャッシュゲームで後悔しないために。出発前に確認しておきたい7つのポイントです。</p>
+    </div>
+    <div class="prep-grid">
+      <div class="prep-step reveal">
+        <div class="prep-step-icon">💱</div>
+        <div>
+          <div class="prep-step-num">STEP 01</div>
+          <div class="prep-step-title">両替と資金計画</div>
+          <div class="prep-step-desc">現地通貨は空港より市内の両替所が有利。クレジットカードはJCB・Visaを2枚準備。バンクロール（遊興資金）はキャッシュゲームの20〜50バイイン分を目安に。</div>
+        </div>
+      </div>
+      <div class="prep-step reveal reveal-delay-1">
+        <div class="prep-step-icon">👔</div>
+        <div>
+          <div class="prep-step-num">STEP 02</div>
+          <div class="prep-step-title">ドレスコードの確認</div>
+          <div class="prep-step-desc">多くのカジノはスマートカジュアル。短パン・サンダルはNG。ジャケット不要な場合がほとんどですが、事前に各ルームのルールを確認しましょう。</div>
+        </div>
+      </div>
+      <div class="prep-step reveal reveal-delay-2">
+        <div class="prep-step-icon">🗣️</div>
+        <div>
+          <div class="prep-step-num">STEP 03</div>
+          <div class="prep-step-title">英語フレーズを覚える</div>
+          <div class="prep-step-desc">「Raise / Call / Fold / All-in / Check」の5語は必須。「How much is the time charge?」「Is there a waiting list?」も覚えておくと安心です。</div>
+        </div>
+      </div>
+      <div class="prep-step reveal reveal-delay-3">
+        <div class="prep-step-icon">🃏</div>
+        <div>
+          <div class="prep-step-num">STEP 04</div>
+          <div class="prep-step-title">テーブルマナーを学ぶ</div>
+          <div class="prep-step-desc">行動は必ず自分のターンに。チップはプッシュして出す。スローロール厳禁。事前にオンラインポーカーで実践を積んでおくと現地でも安心です。</div>
+        </div>
+      </div>
+      <div class="prep-step reveal">
+        <div class="prep-step-icon">📋</div>
+        <div>
+          <div class="prep-step-num">STEP 05</div>
+          <div class="prep-step-title">入場・登録の流れ</div>
+          <div class="prep-step-desc">パスポートを必ず持参。入場時にIDチェックあり。ポーカールームのデスクでウェイティングリストに名前を登録する方法を覚えておきましょう。</div>
+        </div>
+      </div>
+      <div class="prep-step reveal reveal-delay-1">
+        <div class="prep-step-icon">🏨</div>
+        <div>
+          <div class="prep-step-num">STEP 06</div>
+          <div class="prep-step-title">ホテル選びとスケジュール</div>
+          <div class="prep-step-desc">カジノ直結ホテルが断然便利。深夜プレイ後も安全に帰れます。2泊3日が最初の遠征には最適。観光も組み合わせると疲れにくい。</div>
+        </div>
+      </div>
+      <div class="prep-step reveal reveal-delay-2">
+        <div class="prep-step-icon">🧠</div>
+        <div>
+          <div class="prep-step-num">STEP 07</div>
+          <div class="prep-step-title">メンタルと体調管理</div>
+          <div class="prep-step-desc">時差・疲労・アルコールは判断力を落とします。負けが続いたら無理に続けず休憩を。カジノは24時間営業なので翌日でも入れます。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================
+     ARTICLES
+============================= -->
+<section class="articles section-py">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-eyebrow">Popular Articles</div>
       <h2 class="section-title">人気<span>記事</span></h2>
+      <p class="section-desc">実際に現地へ行く前に読んでおきたい、詳細ガイド記事。</p>
     </div>
-    <div class="article-grid">
-      <a href="article/macau-poker-guide.html" class="article-card">
-        <div class="article-card-img-placeholder">🎰</div>
+    <div class="articles-grid">
+
+      <a href="article/macau-poker-guide.html" class="article-card reveal">
+        <div class="article-card-img">
+          <img data-scene="article-macau" src="" alt="マカオのカジノ">
+        </div>
         <div class="article-card-body">
-          <span class="article-tag">マカオ</span>
+          <span class="article-tag-badge">Macau</span>
           <div class="article-card-title">マカオ カジノ ポーカーキャッシュゲーム完全ガイド【2026年版】</div>
-          <div class="article-card-desc">ベネチアン・グランドリスボン・MGM・ウィンの4大ルームを徹底比較。レート・マナー・アクセスを日本語で解説。</div>
-          <div class="article-card-foot">
-            <span>2026.03.19</span><span>📖 約10分</span>
-          </div>
+          <div class="article-card-desc">ベネチアン・グランドリスボン・MGM・ウィン4大ルームを徹底比較。レート・マナー・アクセスを解説。</div>
+          <div class="article-card-foot"><span>2026.03.19</span><span>📖 約10分</span></div>
         </div>
       </a>
-      <a href="#" class="article-card">
-        <div class="article-card-img-placeholder">🃏</div>
+
+      <a href="#" class="article-card reveal reveal-delay-1">
+        <div class="article-card-img">
+          <img data-scene="article-manila" src="" alt="マニラのカジノ">
+        </div>
         <div class="article-card-body">
-          <span class="article-tag">マニラ</span>
-          <div class="article-card-title">フィリピン・マニラ ポーカールームおすすめランキング</div>
-          <div class="article-card-desc">Solaire・Okada・City of Dreamsの3大カジノリゾートを比較。低レートから高レートまで対応。</div>
-          <div class="article-card-foot">
-            <span>2026.03.18</span><span>📖 約8分</span>
-          </div>
+          <span class="article-tag-badge">Manila</span>
+          <div class="article-card-title">マニラ ポーカールームおすすめランキング【Solaire・Okada・COD】</div>
+          <div class="article-card-desc">3大カジノリゾートを比較。低〜中レートで楽しめるマニラの魅力を徹底解説。</div>
+          <div class="article-card-foot"><span>2026.03.18</span><span>📖 約8分</span></div>
         </div>
       </a>
-      <a href="#" class="article-card">
-        <div class="article-card-img-placeholder">✈️</div>
+
+      <a href="#" class="article-card reveal reveal-delay-2">
+        <div class="article-card-img">
+          <img data-scene="article-init" src="" alt="空港">
+        </div>
         <div class="article-card-body">
-          <span class="article-tag">初心者</span>
+          <span class="article-tag-badge">初心者</span>
           <div class="article-card-title">海外カジノ ポーカー 初遠征 完全チェックリスト</div>
-          <div class="article-card-desc">パスポート・両替・ドレスコード・入場方法まで。初めての方が失敗しないための準備ガイド。</div>
-          <div class="article-card-foot">
-            <span>2026.03.17</span><span>📖 約6分</span>
-          </div>
+          <div class="article-card-desc">パスポート・両替・ドレスコードから入場方法まで。初めての方が失敗しない準備ガイド。</div>
+          <div class="article-card-foot"><span>2026.03.17</span><span>📖 約6分</span></div>
         </div>
       </a>
-      <a href="#" class="article-card">
-        <div class="article-card-img-placeholder">🎲</div>
+
+      <a href="#" class="article-card reveal">
+        <div class="article-card-img">
+          <img data-scene="article-lv" src="" alt="ラスベガス">
+        </div>
         <div class="article-card-body">
-          <span class="article-tag">ラスベガス</span>
-          <div class="article-card-title">ラスベガス ポーカールーム 日本人完全ガイド【Bellagio/Aria/Venetian】</div>
-          <div class="article-card-desc">世界最高峰の3大ポーカールームを実体験レポート。レート・混雑時間・アクセス方法を詳しく解説。</div>
-          <div class="article-card-foot">
-            <span>2026.03.16</span><span>📖 約12分</span>
-          </div>
+          <span class="article-tag-badge">Las Vegas</span>
+          <div class="article-card-title">ラスベガス ポーカールーム 日本人完全ガイド【Bellagio・Aria・Venetian】</div>
+          <div class="article-card-desc">世界最高峰の3大ルームを実体験レポート。混雑時間・アクセス・レートを詳しく解説。</div>
+          <div class="article-card-foot"><span>2026.03.16</span><span>📖 約12分</span></div>
         </div>
       </a>
-      <a href="#" class="article-card">
-        <div class="article-card-img-placeholder">💴</div>
+
+      <a href="#" class="article-card reveal reveal-delay-1">
+        <div class="article-card-img">
+          <img data-scene="article-money" src="" alt="チップとカード">
+        </div>
         <div class="article-card-body">
-          <span class="article-tag">資金管理</span>
+          <span class="article-tag-badge">準備</span>
           <div class="article-card-title">カジノ遠征 現金・両替・クレジットカード 完全マニュアル</div>
-          <div class="article-card-desc">いくら持っていけばいい？両替はどこで？カード払いは使える？遠征前に必ず読む資金ガイド。</div>
-          <div class="article-card-foot">
-            <span>2026.03.15</span><span>📖 約7分</span>
-          </div>
+          <div class="article-card-desc">いくら持っていけばいい？両替はどこで？遠征前に必ず読む資金計画ガイド。</div>
+          <div class="article-card-foot"><span>2026.03.15</span><span>📖 約7分</span></div>
         </div>
       </a>
-      <a href="#" class="article-card">
-        <div class="article-card-img-placeholder">🇸🇬</div>
+
+      <a href="#" class="article-card reveal reveal-delay-2">
+        <div class="article-card-img">
+          <img data-scene="article-sg" src="" alt="シンガポール">
+        </div>
         <div class="article-card-body">
-          <span class="article-tag">シンガポール</span>
-          <div class="article-card-title">シンガポール MBS・RWS ポーカーガイド 入場料・ゲーム種類</div>
-          <div class="article-card-desc">外国人無料入場のMBSとRWSのポーカールームを比較。NLH・PLOのレートと混雑時間帯を解説。</div>
-          <div class="article-card-foot">
-            <span>2026.03.14</span><span>📖 約8分</span>
-          </div>
+          <span class="article-tag-badge">Singapore</span>
+          <div class="article-card-title">シンガポール MBS・RWSポーカールームガイド【入場料・ゲーム種類】</div>
+          <div class="article-card-desc">治安最高・英語OK・外国人入場無料。シンガポール2大ルームの完全比較。</div>
+          <div class="article-card-foot"><span>2026.03.14</span><span>📖 約8分</span></div>
         </div>
       </a>
+
     </div>
   </div>
 </section>
 
-<!-- BEGINNER GUIDE -->
-<section class="beginner-section">
-  <div class="section-inner">
-    <div class="section-header">
-      <div class="section-label">FOR BEGINNERS</div>
-      <h2 class="section-title">初めての方向け<span>ガイド</span></h2>
+<!-- ============================
+     FAQ
+============================= -->
+<section class="faq section-py" id="faq">
+  <div class="container">
+    <div class="section-header reveal" style="text-align:center; max-width:600px; margin:0 auto 48px;">
+      <div class="section-eyebrow" style="justify-content:center;">
+        <span style="width:0;"></span>FAQ
+      </div>
+      <h2 class="section-title">よくある<span>質問</span></h2>
+      <p class="section-desc">初めての方からよく聞かれる質問をまとめました。</p>
     </div>
-    <div class="beginner-grid">
-      <a href="#" class="beginner-link"><span class="beginner-icon">✈️</span>遠征の準備と持ち物</a>
-      <a href="#" class="beginner-link"><span class="beginner-icon">💱</span>両替・資金の持ち方</a>
-      <a href="#" class="beginner-link"><span class="beginner-icon">👔</span>ドレスコードガイド</a>
-      <a href="#" class="beginner-link"><span class="beginner-icon">🎴</span>カジノでのマナー</a>
-      <a href="#" class="beginner-link"><span class="beginner-icon">🗣️</span>英語フレーズ集</a>
-      <a href="#" class="beginner-link"><span class="beginner-icon">💰</span>バンクロール管理</a>
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <button class="faq-q">ポーカー初心者でも海外のキャッシュゲームに行けますか？<span class="faq-icon">＋</span></button>
+        <div class="faq-a">もちろん行けます。ただし、基本的なルール（NLH）を理解してから行くことをおすすめします。オンラインポーカーで10〜20時間ほど練習し、ハンドの強さとアクションの流れを覚えてから挑戦すると安心です。最初はグランドリスボンやマニラの低レートテーブルがおすすめです。</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">英語が苦手でも大丈夫ですか？<span class="faq-icon">＋</span></button>
+        <div class="faq-a">「Raise」「Call」「Fold」「All-in」「Check」の5語さえ言えれば、プレイ自体は問題なくできます。マカオやマニラでは日本語が少し通じる場合もあります。不安なら事前に英語フレーズ集（当サイトで公開予定）を確認してから行きましょう。</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">最低いくら持っていけばいいですか？<span class="faq-icon">＋</span></button>
+        <div class="faq-a">プレイ資金だけで言えば、最低バイインの10〜20倍を目安にしてください。例えばHKD10/20のテーブルなら、最低バイインが約HKD400〜800（約6,000〜12,000円）なので、プレイ資金は5〜10万円あれば余裕があります。これに加えてホテル・食事・交通費が必要です。</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">タイムチャージとレーキの違いは？<span class="faq-icon">＋</span></button>
+        <div class="faq-a">レーキはポットの数%をカジノが徴収する方式。タイムチャージは座っている時間に応じて一定額を支払う方式です。アジアのカジノはタイムチャージ制が多く、長時間プレイすると相対的にコストが安くなる傾向があります。例：HKD80/時間 ≒ 約1,200円/時間。</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">勝った分のお金はどうやって持ち帰りますか？<span class="faq-icon">＋</span></button>
+        <div class="faq-a">カジノの勝ち金は現金（チップをキャッシャーで換金）で持ち帰ります。日本への現金持ち帰りは100万円超から税関申告が必要です。大金になる場合は銀行振込など別の方法を検討してください。また、年間所得によってはギャンブル収益に税金がかかる場合があります。</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">女性でも安心して行けますか？<span class="faq-icon">＋</span></button>
+        <div class="faq-a">マカオ・シンガポール・マニラの大手カジノリゾートは警備が充実しており、女性1人でも安全にプレイできます。カジノ直結ホテルに宿泊すれば、深夜でも外を歩かずに部屋に戻れます。グループ参加や昼〜夕方の時間帯からスタートするとより安心です。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================
+     FINAL CTA
+============================= -->
+<section class="final-cta section-py">
+  <div class="final-cta-bg">
+    <img data-scene="cta" src="" alt="ポーカールームの夜景">
+  </div>
+  <div class="container final-cta-content reveal">
+    <div class="final-cta-eyebrow">Ready to Start?</div>
+    <h2 class="final-cta-title">まずは、どのエリアに行くか<br>決めることから始めましょう。</h2>
+    <p class="final-cta-desc">不安をひとつずつ解消しながら、あなたの初遠征を一緒に計画します。情報を読むだけでも、行く気が変わります。</p>
+    <div class="final-cta-btns">
+      <a href="area/asia.html" class="btn btn-primary">🌏 アジアガイドを見る</a>
+      <a href="guide/beginners.html" class="btn btn-ghost">初心者ガイドを読む</a>
     </div>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-inner">
-    <div class="footer-logo">♠ JAPAN CASH GAME TOUR</div>
-    <div class="footer-desc">世界中のカジノポーカーキャッシュゲームを日本語で完全ガイド。初めての海外遠征でも安心して楽しめるメディアです。</div>
-    <nav class="footer-nav">
-      <a href="area/asia.html">アジアガイド</a>
-      <a href="#">ヨーロッパガイド</a>
-      <a href="#">北米ガイド</a>
-      <a href="#">ルール解説</a>
-      <a href="guide/beginners.html">初心者ガイド</a>
-      <a href="#">資金管理</a>
-      <a href="#">マナー</a>
-      <a href="#">遠征計画</a>
-    </nav>
-    <div class="footer-copy">© 2026 Japan Cash Game Tour. All rights reserved.</div>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo" style="text-decoration:none;">
+          <span class="logo-en" style="color:rgba(255,255,255,0.4);">Cash Game Concierge</span>
+          <span class="logo-ja" style="color:#fff;">キャッシュゲームコンシェルジュ</span>
+        </a>
+        <p class="footer-desc">世界中のカジノポーカーキャッシュゲームを、日本語でやさしく案内する専門メディアです。</p>
+      </div>
+      <div>
+        <div class="footer-nav-title">エリアガイド</div>
+        <div class="footer-nav-links">
+          <a href="area/asia.html">アジア（マカオ・マニラ・他）</a>
+          <a href="#">ヨーロッパ（ロンドン・他）</a>
+          <a href="#">北米（ラスベガス・他）</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-nav-title">ガイド</div>
+        <div class="footer-nav-links">
+          <a href="#">初心者ガイド</a>
+          <a href="#">ルール・マナー</a>
+          <a href="#">資金管理</a>
+          <a href="#">よくある質問</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-nav-title">サイト情報</div>
+        <div class="footer-nav-links">
+          <a href="#">このサイトについて</a>
+          <a href="#">プライバシーポリシー</a>
+          <a href="#">免責事項</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2026 キャッシュゲームコンシェルジュ. All rights reserved.</div>
+      <div class="footer-copy">当サイトは情報提供を目的としており、ギャンブルを推奨するものではありません。</div>
+    </div>
   </div>
 </footer>
 
