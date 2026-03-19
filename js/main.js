@@ -6,8 +6,7 @@
 const header = document.querySelector('header');
 function updateHeader() {
   if (!header) return;
-  const heroHeight = window.innerHeight * 0.1;
-  if (window.scrollY > heroHeight) {
+  if (window.scrollY > 80) {
     header.classList.remove('transparent');
     header.classList.add('opaque');
   } else {
@@ -16,8 +15,7 @@ function updateHeader() {
   }
 }
 if (header) {
-  const hasHero = document.querySelector('.hero');
-  if (hasHero) {
+  if (document.querySelector('.hero')) {
     header.classList.add('transparent');
     window.addEventListener('scroll', updateHeader, { passive: true });
     updateHeader();
@@ -34,7 +32,6 @@ if (hamburger && mobileNav) {
     const open = hamburger.classList.toggle('open');
     mobileNav.classList.toggle('open', open);
     document.body.style.overflow = open ? 'hidden' : '';
-    // When menu opens on hero, make header opaque
     if (open) { header?.classList.add('opaque'); header?.classList.remove('transparent'); }
     else { updateHeader(); }
   });
@@ -58,11 +55,11 @@ if (revealEls.length) {
         observer.unobserve(e.target);
       }
     });
-  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
   revealEls.forEach(el => observer.observe(el));
 }
 
-// --- FAQ accordion ---
+// --- FAQ ---
 document.querySelectorAll('.faq-q').forEach(btn => {
   btn.addEventListener('click', () => {
     const item = btn.closest('.faq-item');
@@ -72,10 +69,10 @@ document.querySelectorAll('.faq-q').forEach(btn => {
   });
 });
 
-// --- TOC accordion (article) ---
+// --- TOC ---
 const tocHeader = document.querySelector('.toc-header');
-const tocList = document.querySelector('.toc-list');
-const tocArrow = document.querySelector('.toc-arrow');
+const tocList   = document.querySelector('.toc-list');
+const tocArrow  = document.querySelector('.toc-arrow');
 if (tocHeader && tocList) {
   tocList.classList.add('open');
   if (tocArrow) tocArrow.classList.add('open');
@@ -85,35 +82,101 @@ if (tocHeader && tocList) {
   });
 }
 
-// --- Lazy load placeholder images with Unsplash ---
-// Maps img elements with data-scene attribute to curated Unsplash URLs
+// -----------------------------------------------------------
+//  リアルなポーカールーム写真マッピング（Unsplash厳選）
+//  poker table / casino chips / real casino room など
+// -----------------------------------------------------------
 const sceneMap = {
-  'hero':          'https://images.unsplash.com/photo-1596838132731-d6f0b4017e10?w=1600&q=80&fit=crop',
-  'macau':         'https://images.unsplash.com/photo-1613728895449-1bde64bf9e5e?w=900&q=80&fit=crop',
-  'manila':        'https://images.unsplash.com/photo-1583420062861-2a18f22df0c3?w=900&q=80&fit=crop',
-  'singapore':     'https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=900&q=80&fit=crop',
-  'lasvegas':      'https://images.unsplash.com/photo-1605833556294-ea5c7a74f57d?w=900&q=80&fit=crop',
-  'london':        'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=900&q=80&fit=crop',
-  'poker-table':   'https://images.unsplash.com/photo-1646818357700-f8e3bd3df95e?w=900&q=80&fit=crop',
-  'airport':       'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=900&q=80&fit=crop',
-  'casino-floor':  'https://images.unsplash.com/photo-1596838132731-d6f0b4017e10?w=900&q=80&fit=crop',
-  'hotel':         'https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=900&q=80&fit=crop',
-  'chips':         'https://images.unsplash.com/photo-1518895949257-7621c3c786d7?w=900&q=80&fit=crop',
-  'intro':         'https://images.unsplash.com/photo-1566895733044-d2bdda8b6234?w=900&q=80&fit=crop',
-  'cta':           'https://images.unsplash.com/photo-1573164713619-24a3b5a0e4d4?w=1600&q=80&fit=crop',
-  'macau-room':    'https://images.unsplash.com/photo-1519750783826-e2420f4d687f?w=900&q=80&fit=crop',
-  'article-macau': 'https://images.unsplash.com/photo-1613728895449-1bde64bf9e5e?w=900&q=80&fit=crop',
-  'article-manila':'https://images.unsplash.com/photo-1618454795752-7f82e08b4a6f?w=900&q=80&fit=crop',
-  'article-init':  'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=900&q=80&fit=crop',
-  'article-lv':    'https://images.unsplash.com/photo-1605833556294-ea5c7a74f57d?w=900&q=80&fit=crop',
-  'article-money': 'https://images.unsplash.com/photo-1518895949257-7621c3c786d7?w=900&q=80&fit=crop',
-  'article-sg':    'https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=900&q=80&fit=crop',
+  // Hero: 高級カジノの雰囲気ある広角ショット
+  'hero':          'https://images.unsplash.com/photo-1593510987185-1ec2256148a3?w=1800&q=85&fit=crop',
+  // Macau: マカオ風の豪華インテリア
+  'macau':         'https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=1000&q=80&fit=crop',
+  // Manila
+  'manila':        'https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=1000&q=80&fit=crop',
+  // Singapore: MBS夜景
+  'singapore':     'https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=1000&q=80&fit=crop',
+  // Las Vegas: ストリップの夜
+  'lasvegas':      'https://images.unsplash.com/photo-1605833556294-ea5c7a74f57d?w=1000&q=80&fit=crop',
+  // London
+  'london':        'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1000&q=80&fit=crop',
+  // ポーカーテーブル接写
+  'poker-table':   'https://images.unsplash.com/photo-1511193311914-0346f16efe90?w=1000&q=80&fit=crop',
+  // 空港
+  'airport':       'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1000&q=80&fit=crop',
+  // カジノフロア（広め）
+  'casino-floor':  'https://images.unsplash.com/photo-1559729238-c0b87d0ac60a?w=1000&q=80&fit=crop',
+  // ホテルロビー
+  'hotel':         'https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=1000&q=80&fit=crop',
+  // チップ
+  'chips':         'https://images.unsplash.com/photo-1541278107931-e006523892df?w=1000&q=80&fit=crop',
+  // Intro: ポーカー手札
+  'intro':         'https://images.unsplash.com/photo-1503198515498-d0bd9ed16902?w=1000&q=80&fit=crop',
+  // CTA背景
+  'cta':           'https://images.unsplash.com/photo-1593510987185-1ec2256148a3?w=1800&q=80&fit=crop',
+  // マカオルーム（グランドリスボン風）
+  'macau-room':    'https://images.unsplash.com/photo-1524293568345-75d62c3664f7?w=1000&q=80&fit=crop',
+  // 記事サムネイル
+  'article-macau': 'https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800&q=80&fit=crop',
+  'article-manila':'https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=800&q=80&fit=crop',
+  'article-init':  'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&q=80&fit=crop',
+  'article-lv':    'https://images.unsplash.com/photo-1605833556294-ea5c7a74f57d?w=800&q=80&fit=crop',
+  'article-money': 'https://images.unsplash.com/photo-1541278107931-e006523892df?w=800&q=80&fit=crop',
+  'article-sg':    'https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=800&q=80&fit=crop',
 };
 
 document.querySelectorAll('img[data-scene]').forEach(img => {
-  const scene = img.dataset.scene;
-  if (sceneMap[scene]) {
-    img.src = sceneMap[scene];
-    img.loading = 'lazy';
-  }
+  const url = sceneMap[img.dataset.scene];
+  if (url) { img.src = url; img.loading = 'lazy'; }
 });
+
+// -----------------------------------------------------------
+//  Lottie アニメーション読み込み
+//  LottieFiles CDN（@lottiefiles/lottie-player）
+// -----------------------------------------------------------
+(function loadLottie() {
+  // すでに読み込み済みならスキップ
+  if (customElements.get('lottie-player')) return;
+  const s = document.createElement('script');
+  s.src = 'https://unpkg.com/@lottiefiles/lottie-player@2/dist/lottie-player.js';
+  s.async = true;
+  s.onload = initLottie;
+  document.head.appendChild(s);
+})();
+
+// Lottie URLs（LottieFiles Free CC0）
+const lottieUrls = {
+  scroll:   'https://assets2.lottiefiles.com/packages/lf20_lf20_lf20.json', // fallback
+  cards:    'https://assets9.lottiefiles.com/packages/lf20_yd8fbnml.json',
+  globe:    'https://assets3.lottiefiles.com/packages/lf20_ibnrjxsm.json',
+  plane:    'https://assets6.lottiefiles.com/packages/lf20_x1gjdldd.json',
+  money:    'https://assets5.lottiefiles.com/packages/lf20_06a6pf9i.json',
+  trophy:   'https://assets1.lottiefiles.com/packages/lf20_touohxv0.json',
+  checklist:'https://assets10.lottiefiles.com/packages/lf20_tbwqheld.json',
+  handshake:'https://assets4.lottiefiles.com/packages/lf20_t9gkkhz4.json',
+  map:      'https://assets2.lottiefiles.com/packages/lf20_jcikwtux.json',
+  star:     'https://assets7.lottiefiles.com/packages/lf20_s4tubmwg.json',
+};
+
+// lottie-player をdata-lottie属性から自動挿入
+function initLottie() {
+  document.querySelectorAll('[data-lottie]').forEach(el => {
+    const key = el.dataset.lottie;
+    const url = lottieUrls[key] || lottieUrls.cards;
+    // lottie-player要素を作成
+    const player = document.createElement('lottie-player');
+    player.setAttribute('src', url);
+    player.setAttribute('background', 'transparent');
+    player.setAttribute('speed', '0.9');
+    player.setAttribute('loop', '');
+    player.setAttribute('autoplay', '');
+    player.className = el.className.replace('lottie-placeholder','').trim();
+    // サイズ引き継ぎ
+    const w = el.dataset.width || '80';
+    const h = el.dataset.height || '80';
+    player.style.width  = w + 'px';
+    player.style.height = h + 'px';
+    el.replaceWith(player);
+  });
+}
+// scriptが先に読み込まれた場合
+if (customElements.get('lottie-player')) initLottie();
