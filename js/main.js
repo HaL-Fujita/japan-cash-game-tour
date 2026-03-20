@@ -91,8 +91,8 @@ const sceneMap = {
   'hero':          'https://images.unsplash.com/photo-1593510987185-1ec2256148a3?w=1800&q=85&fit=crop',
   // Macau: マカオ風の豪華インテリア
   'macau':         'https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=1000&q=80&fit=crop',
-  // Manila
-  'manila':        'https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=1000&q=80&fit=crop',
+  // Manila: Okada Manila 公式外観写真
+  'manila':        'https://cdn-storage.okadamanila.com/wp-content/uploads/2025/10/30172426/OkadaFacade-Media.webp',
   // Singapore: MBS夜景
   'singapore':     'https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=1000&q=80&fit=crop',
   // Las Vegas: ストリップの夜
@@ -101,6 +101,8 @@ const sceneMap = {
   'london':        'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1000&q=80&fit=crop',
   // ポーカーテーブル接写
   'poker-table':   'https://images.unsplash.com/photo-1511193311914-0346f16efe90?w=1000&q=80&fit=crop',
+  // Jeju Dream Tower: 公式外観・全景写真
+  'jeju':          'https://www.jejudreamtower.com/upload/image/bannerlang/1027/5184.jpg',
   // 空港
   'airport':       'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1000&q=80&fit=crop',
   // カジノフロア（広め）
@@ -117,7 +119,8 @@ const sceneMap = {
   'macau-room':    'https://images.unsplash.com/photo-1524293568345-75d62c3664f7?w=1000&q=80&fit=crop',
   // 記事サムネイル
   'article-macau': 'https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800&q=80&fit=crop',
-  'article-manila':'https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=800&q=80&fit=crop',
+  // article-manila: Okada Manila 公式外観写真
+  'article-manila':'https://cdn-storage.okadamanila.com/wp-content/uploads/2025/10/30172426/OkadaFacade-Media.webp',
   'article-init':  'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&q=80&fit=crop',
   'article-lv':    'https://images.unsplash.com/photo-1605833556294-ea5c7a74f57d?w=800&q=80&fit=crop',
   'article-money': 'https://images.unsplash.com/photo-1541278107931-e006523892df?w=800&q=80&fit=crop',
